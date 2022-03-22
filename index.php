@@ -12,11 +12,10 @@ $testi = mysqli_query($con, "SELECT * FROM testimonials");
 //fetch blog
 $blog = mysqli_query($con, "SELECT * FROM blog");
 
-
-//fetch services
-$services = mysqli_query($con, "SELECT * FROM services ORDER BY id DESC LIMIT 3");
-
+$main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -207,7 +206,7 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id DESC LIMIT 3"
         <div class="container pb-5">
             <div class="row ">
                 <?php
-                while ($row = mysqli_fetch_array($services)) {
+                while ($row = mysqli_fetch_array($main_service)) {
                 ?>
                     <div class="col-md-4 zoom">
 

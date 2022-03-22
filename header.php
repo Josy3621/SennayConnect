@@ -4,6 +4,9 @@ include "admin/conn.php";
 //fetch settings
 $settings = mysqli_query($con, "SELECT * FROM settings");
 $setting  = mysqli_fetch_array($settings);
+
+//fetch services
+$services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
 ?>
 
 
@@ -66,31 +69,55 @@ $setting  = mysqli_fetch_array($settings);
 
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-md navbar-light">
-                            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                <ul class="navigation">
-                                    <li class="dropdown"><a href="index.php">Home</a></li>
 
 
-                                    <li class="dropdown"><a href="about.php">About Us</a></li>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="hover">
+
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active"><a class="nav-item m-lg-2" class="nav-link" href="index.php">Home</a></li>
 
 
-                                    <li class="dropdown"><a href="service.php">Services</a>
-                                    <li class="dropdown"><a href="faq.php">FAQ</a>
+                                        <li><a class="nav-item m-lg-2" class="nav-link" href="about.php">About Us</a></li>
 
-                                    </li>
 
-                                    <li class="dropdown"><a href="blog.php">News</a>
+                                        <li class="nav-item dropdown"><a class="nav-item m-lg-2" class="nav-link dropdown-toggle" href="service.php" id="navbarDropdown" role="button" data-toggle="dropdown" class="fa-solid fa-caret-down">Services <i class="fas fa-chevron-circle-down"></i></a>
 
-                                    </li>
-                                    <li><a href="contact.php">Contact Us</a></li>
-                                    <div class="language">
 
-                                        <form action="#" class="language-switcher">
+                                            <div class="hover-1">
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <?php
 
-                                        </form>
-                                    </div>
-                                </ul>
-                            </div>
+                                                    while ($side_row = mysqli_fetch_array($services)) {
+                                                    ?>
+                                                        <a class="dropdown-item" href="single-service.php?id=<?php echo $side_row['id']; ?>">
+                                                            <?php echo $side_row['title']; ?> <i class="fas fa-chevron-circle-right"></i> </a>
+                                                        <div class="dropdown-divider"></div>
+                                                    <?php  } ?>
+                                                </div>
+                                            </div>
+
+
+                                        </li>
+                                        <li><a class="nav-item m-lg-2" class="nav-link" href="faq.php">FAQ</a>
+
+                                        </li>
+
+                                        <li><a class="nav-item m-lg-2" class="nav-link" href="blog.php">News</a>
+
+                                        </li>
+                                        <li><a class="nav-item m-lg-2" class="nav-link" href="contact.php">Contact Us</a></li>
+                                        <div class="language">
+
+                                            <form action="#" class="language-switcher">
+
+                                            </form>
+                                        </div>
+                                    </ul>
+
+                                </div>
+
+                        </nav>
                         </nav>
                     </div>
 
