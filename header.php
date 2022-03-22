@@ -8,6 +8,7 @@ $setting  = mysqli_fetch_array($settings);
 //fetch services
 $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
 ?>
+<link rel="stylesheet" href="assets/css/submanu.css">
 
 
 <!-- Main Header -->
@@ -18,11 +19,7 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
     <div class="header-top">
         <div class="auto-container">
             <div class="inner-container">
-                <a href="index.php">
-                    <h5 style="position: absolute; left: 0px;
-                    top: 10px;
-                    z-index: 1; color:rgb(255, 95, 21)" ;>
-                        Sennay Connect</h5>
+                <a class="navbar-brand" href="index.php">Sennay Connect
                 </a>
                 <div class="left-column">
 
@@ -70,9 +67,9 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-md navbar-light">
 
+                            <div class="hover">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <div class="hover">
 
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active"><a class="nav-item m-lg-2" class="nav-link" href="index.php">Home</a></li>
@@ -99,9 +96,9 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
 
 
                                         </li>
-                                        <li><a class="nav-item m-lg-2" class="nav-link" href="faq.php">FAQ</a>
+                                        <!-- <li><a class="nav-item m-lg-2" class="nav-link" href="faq.php">FAQ</a>
 
-                                        </li>
+                                        </li> -->
 
                                         <li><a class="nav-item m-lg-2" class="nav-link" href="blog.php">News</a>
 
@@ -116,8 +113,9 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                                     </ul>
 
                                 </div>
+                            </div>
 
-                        </nav>
+
                         </nav>
                     </div>
 

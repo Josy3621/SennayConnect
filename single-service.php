@@ -81,7 +81,7 @@ $setting  = mysqli_fetch_array($settings);
 
                         <ul class="bread-crumb clearfix">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Service</a></li>
                             <li><?php echo $fetch['title']; ?></li>
                         </ul>
                     </div>
@@ -176,7 +176,7 @@ $setting  = mysqli_fetch_array($settings);
                             </div>
 
                             <!-- Tag-cloud Widget -->
-                            <div class="widget tag-cloud-widget">
+                            <!-- <div class="widget tag-cloud-widget">
                                 <h4 class="widget_title">Tag Cloud</h4>
                                 <ul class="clearfix">
                                     <li><a href="#">Cargo</a></li>
@@ -190,7 +190,7 @@ $setting  = mysqli_fetch_array($settings);
                                     <li><a href="#">Transportation</a></li>
                                     <li><a href="#">Warehouse</a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <!-- Advertisement Widget -->
 
                         </div>
