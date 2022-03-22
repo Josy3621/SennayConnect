@@ -114,22 +114,22 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                 </a>
             </div>
         </div>-->
-            <div class="background-text">
+            <!-- <div class="background-text">
                 <div data-parallax='{"x": 100}'>
                     <div class="text-1">transida</div>
                     <div class="text-2">transida</div>
                 </div>
-            </div>
+            </div> -->
             <div class="swiper-container banner-slider">
                 <div class="swiper-wrapper">
                     <!-- Slide Item -->
-                    <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-1.jpg);">
+                    <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-7.jpg);">
                         <div class="content-outer">
                             <div class="content-box">
                                 <div class="inner text-center">
-                                    <h4>Competitve rates </h4>
+                                    <h4>Project Management </h4>
                                     <h1>safety & reliable on-time</h1>
-                                    <div class="text">We denounce with righteous indignation & dislike beguiled</div>
+                                    <div class="text">Leading the work of a team to achieve all project goals</div>
                                     <div class="link-box">
                                         <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
                                     </div>
@@ -138,12 +138,12 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                         </div>
                     </div>
                     <!-- Slide Item -->
-                    <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-2.jpg);">
+                    <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-8.jpg);">
                         <div class="content-outer">
                             <div class="content-box">
                                 <div class="inner text-center">
-                                    <h4>Your logistic partner </h4>
-                                    <h1>make easy distribution</h1>
+                                    <h4>Matchmaking </h4>
+                                    <h1>Make easy Connection Between NGO and Corporate</h1>
                                     <div class="text">To take a trivial example which of us ever undertakes laborious.</div>
                                     <div class="link-box">
                                         <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
@@ -157,9 +157,9 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                         <div class="content-outer">
                             <div class="content-box">
                                 <div class="inner text-center">
-                                    <h4>It’s possible here</h4>
-                                    <h1>Shipments delivered on time</h1>
-                                    <div class="text">Right to find fault with a man who chooses to enjoy a pleasure.</div>
+                                    <h4>Project Training</h4>
+                                    <h1>how to initiate projects successfully</h1>
+                                    <div class="text">improving internal and external interactions of team members</div>
                                     <div class="link-box">
                                         <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
                                     </div>
