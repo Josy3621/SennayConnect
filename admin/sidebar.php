@@ -83,7 +83,7 @@
                                                   } ?>">
             <i class="fa fa-plus nav-icon"></i>
             <p>
-              Add New Blog
+              Add New News
             </p>
           </a>
         </li>
@@ -94,12 +94,12 @@
                                                   } ?>">
             <i class="fa fa-eye nav-icon"></i>
             <p>
-              View Blog
+              View News
             </p>
           </a>
         </li>
         <li class="nav-item has-treeview menu-open">
-          <h5 class="pt-2 pb-2" style="color:white;">Testimony Section</h5>
+          <h5 class="pt-2 pb-2" style="color:white;">Our work Section</h5>
         </li>
 
         <li class="nav-item has-treeview menu-open">
@@ -108,7 +108,7 @@
                                                           } ?>">
             <i class="fa fa-plus nav-icon"></i>
             <p>
-              Add Testimonials
+              Add Work
             </p>
           </a>
         </li>
@@ -119,11 +119,11 @@
             <i class="fa fa-plus nav-icon"></i>
             <p>
 
-              View Testimonials
+              View Work
             </p>
           </a>
         </li>
-        <h5 class="pt-2 pb-2" style="color:white;">OTHER OPTIONS</h5>
+        <!-- <h5 class="pt-2 pb-2" style="color:white;">OTHER OPTIONS</h5>
         <li class="nav-item has-treeview menu-open">
           <a href="faqs.php" class="nav-link <?php if ($a == 10) {
                                                 echo 'active';
@@ -133,7 +133,7 @@
               FAQ
             </p>
           </a>
-        </li>
+        </li> -->
 
       </ul>
     </nav>

@@ -1,5 +1,6 @@
 <?php
 include "admin/conn.php";
+include 'admin/auth.php';
 
 //fetch settings
 $settings = mysqli_query($con, "SELECT * FROM settings");
@@ -37,15 +38,16 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                         <span class="flaticon-cursor"></span>
                         <form action="#" class="location-switcher">
                             <select class="selectpicker">
-                                <option value="1">Ethiopia</option>
-                                <option value="2">USA</option>
-                                <option value="3">China</option>
+                                <option >Ethiopia</option>
+                               
 
                             </select>
                         </form>
                     </div>
                     <div class="phone-number"><i class="flaticon-calling"></i><a href="tel:<?php echo $setting['phone']; ?>"></a><?php echo $setting['phone']; ?></div>
                 </div>
+                <div class="login"><a href="admin/login.php">Login</a></div>
+                
             </div>
         </div>
     </div>

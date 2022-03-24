@@ -73,7 +73,7 @@ $a = 1;
               <a href="add-blog.php" class="small-box-footer">
                 <div class="small-box bg-warning">
                   <div class="inner">
-                    <h3> Add Blog</h3>
+                    <h3> Add News</h3>
 
                     <p>Add</p>
                   </div>
@@ -89,7 +89,7 @@ $a = 1;
               <a href="view-blog.php" class="small-box-footer">
                 <div class="small-box bg-danger">
                   <div class="inner">
-                    <h3>View Blog</h3>
+                    <h3>View News</h3>
 
                     <p>View</p>
                   </div>
