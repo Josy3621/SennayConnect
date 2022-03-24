@@ -83,6 +83,9 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
 
                                             <div class="hover-1">
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a style="align-content: center;" class="dropdown-item" href="service.php">
+                                                        All Serivice </i> </a>
+                                                    <div class="dropdown-divider"></div>
                                                     <?php
 
                                                     while ($side_row = mysqli_fetch_array($services)) {
@@ -99,6 +102,9 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                                         <!-- <li><a class="nav-item m-lg-2" class="nav-link" href="faq.php">FAQ</a>
 
                                         </li> -->
+                                        <li><a class="nav-item m-lg-2" class="nav-link" href="ourimpact.php">OUR Work </a>
+
+                                        </li>
 
                                         <li><a class="nav-item m-lg-2" class="nav-link" href="blog.php">News</a>
 

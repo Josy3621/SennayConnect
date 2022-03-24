@@ -6,7 +6,7 @@ include "admin/conn.php";
 
 
 //fetch services
-$services = mysqli_query($con, "SELECT * FROM services ORDER BY id DESC");
+$services_main = mysqli_query($con, "SELECT * FROM services ORDER BY id DESC");
 
 //fetch settings
 $settings = mysqli_query($con, "SELECT * FROM settings");
@@ -117,7 +117,7 @@ $setting  = mysqli_fetch_array($settings);
         <div class="container pb-5">
             <div class="row ">
                 <?php
-                while ($row = mysqli_fetch_array($services)) {
+                while ($row = mysqli_fetch_array($services_main)) {
                 ?>
                     <div class="col-md-4 zoom pb-5">
 

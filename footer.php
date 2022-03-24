@@ -83,7 +83,7 @@ $setting  = mysqli_fetch_array($settings);
                                         <li><a href="contact.php">Get In Touch</a></li>
                                         <li><a href="service.php">Our Services</a></li>
                                         <li><a href="blog.php">Blogs & News</a></li>
-                                        <!-- <li><a href="privacy.php">Privacy Policies</a></li> -->
+                                        <li><a href="ourimpact.php">Our work</a></li>
                                         <!-- <li><a href="terms.php">Terms & Conditions</a></li> -->
                                     </ul>
                                 </div>

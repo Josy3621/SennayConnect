@@ -7,12 +7,15 @@ $setting  = mysqli_fetch_array($settings);
 
 
 // fetch testimonials
-$testi = mysqli_query($con, "SELECT * FROM testimonials");
+$testi = mysqli_query($con, "SELECT * FROM testimonials LIMIT 3");
 
 //fetch blog
 $blog = mysqli_query($con, "SELECT * FROM blog");
-
+//fetch service
 $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
+
+//fetch service for about
+$about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
 ?>
 
 
@@ -131,7 +134,7 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                                     <h1>safety & reliable on-time</h1>
                                     <div class="text">Leading the work of a team to achieve all project goals</div>
                                     <div class="link-box">
-                                        <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
+                                        <a href="service.php" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +149,7 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                                     <h1>Make easy Connection Between NGO and Corporate</h1>
                                     <div class="text">To take a trivial example which of us ever undertakes laborious.</div>
                                     <div class="link-box">
-                                        <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
+                                        <a href="service.php" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
                                     </div>
                                 </div>
                             </div>
@@ -159,9 +162,9 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                                 <div class="inner text-center">
                                     <h4>Project Training</h4>
                                     <h1>how to initiate projects successfully</h1>
-                                    <div class="text">improving internal and external interactions of team members</div>
+                                    <div class="text">Right to find fault with a man who chooses to enjoy a pleasure.</div>
                                     <div class="link-box">
-                                        <a href="#" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
+                                        <a href="service.php" class="theme-btn btn-style-one"><span><i class="flaticon-up-arrow"></i>More Details </span></a>
                                     </div>
                                 </div>
                             </div>
@@ -244,17 +247,24 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                             <a href="about.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="icon-box wow fadeInUp" data-wow-duration="1500ms">
-                                    <div class="icon"><span></span></div>
-                                    <div class="content">
-                                        <span>
-                                            <h4>Matchmaking</h4>
-                                        </span>
+
+                            <?php
+
+                            while ($side_row = mysqli_fetch_array($about_service)) {
+                            ?>
+                                <div class="col-md-6">
+                                    <div class="icon-box wow fadeInUp" data-wow-duration="1500ms">
+                                        <div class="icon"><span></span></div>
+                                        <div class="content">
+                                            <span>
+                                                <a class="dropdown-item" href="single-service.php?id=<?php echo $side_row['id']; ?>">
+                                                    <?php echo $side_row['title']; ?> </a>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
+                            <?php  } ?>
+                            <!-- <div class="col-md-6">
                                 <div class="icon-box wow fadeInUp" data-wow-duration="1500ms">
                                     <div class="icon"><span></span></div>
                                     <div class="content">
@@ -284,8 +294,8 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                                         </span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6">
+                            </div> -->
+                            <!-- <div class="col-md-6">
                                 <div class="icon-box wow fadeInUp" data-wow-duration="1900ms">
                                     <div class="icon"><span></span></div>
                                     <div class="content">
@@ -294,7 +304,7 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                                         </span>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -614,35 +624,34 @@ $main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
         <section class="testimonials-section">
             <div class="auto-container">
                 <div class="sec-title text-center">
-                    <div class="sub-title text-center">Testimonials</div>
-                    <h2>Happy Customers Said</h2>
+                    <div class="sub-title text-center">OUR WORK</div>
+                    <h2>Some Of Our Work</h2>
                 </div>
-                <div class="theme_carousel owl-theme owl-carousel">
-                    <?php
-                    while ($row = mysqli_fetch_array($testi)) {
-                    ?>
-                        <div class="testimonial-block">
-                            <div class="inner-box">
-                                <div class="text"><?php echo $row['descrip']; ?>
-                                </div>
-                                <div class="author-thumb">
-                                    <img src="admin/images/testimonial/<?php echo $row['img']; ?>" alt="">
-                                    <div class="quote"><span class="flaticon-right-quote"></span>
+                <div class="container pb-5">
+                    <div class="row ">
+                        <?php
+                        while ($row = mysqli_fetch_array($testi)) {
+                        ?>
+                            <div class="col-md-4 zoom pb-5">
+
+                                <div class="card-deck">
+                                    <div class="card">
+                                        <img class="card-img-top" style="height:270px;" src="admin/images/testimonial/<?php echo $row['img']; ?>" alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b><?php echo $row['title']; ?></b></h5>
+                                            <div class="designation"><?php echo $row['designation']; ?></div>
+                                            <div class="text"><?php echo $row['descrip']; ?>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
-                                <h4><?php echo $row['title']; ?></h4>
-                                <div class="designation"><?php echo $row['designation']; ?></div>
-                                <div class="rating">
-                                    <span class="flaticon-star-1"></span>
-                                    <span class="flaticon-star-1"></span>
-                                    <span class="flaticon-star-1"></span>
-                                    <span class="flaticon-star-1"></span>
-                                    <span class="flaticon-star-1"></span>
-                                </div>
+
                             </div>
-                        </div>
-                    <?php } ?>
-                    <!-- End -->
+                        <?php  } ?>
+
+                    </div>
+                    <div class="link"><a href="OURIMPACT.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
                 </div>
             </div>
         </section>
