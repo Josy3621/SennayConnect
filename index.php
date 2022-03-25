@@ -651,7 +651,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                         <?php  } ?>
 
                     </div>
-                    <div class="link"><a href="OURIMPACT.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
+                    <div class="link"><a href="ourimpact.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
                 </div>
             </div>
         </section>

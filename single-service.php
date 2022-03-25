@@ -111,6 +111,7 @@ $setting  = mysqli_fetch_array($settings);
 
                                     </div>
 
+                                    <div class="link"><a href="admin/login_detail.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
 
                                 </div>
                             </div>
@@ -194,6 +195,7 @@ $setting  = mysqli_fetch_array($settings);
                             <!-- Advertisement Widget -->
 
                         </div>
+                    
                     </aside>
                 </div>
             </div>

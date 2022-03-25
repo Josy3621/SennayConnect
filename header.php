@@ -1,6 +1,6 @@
 <?php
 include "admin/conn.php";
-include 'admin/auth.php';
+
 
 //fetch settings
 $settings = mysqli_query($con, "SELECT * FROM settings");
