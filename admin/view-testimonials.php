@@ -94,7 +94,7 @@ $a = 9;
               }
               ?>
 
-              <h1>All Testimonials</h1>
+              <h1>All Work</h1>
             </div>
             <div class="col-sm-6" style="text-align:right;">
               <a class="btn btn-primary" href="add-testimonials.php">
@@ -124,7 +124,7 @@ $a = 9;
                     <tr>
                       <th>Img</th>
                       <th>Name</th>
-                      <th>designation</th>
+                      <th>Short Description</th>
                       <th>Description</th>
                       <th></th>
                     </tr>

@@ -122,7 +122,7 @@ $a = 5;
               }
               ?>
 
-              <h1>Add Testimonials</h1>
+              <h1>Add Work</h1>
             </div>
             <div class="col-sm-6">
               <a href="view-testimonials.php" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i> View Testimonials</a>
@@ -148,13 +148,13 @@ $a = 5;
                 </div>
                 <div class="card-header">
                   <div class="form-group">
-                    <label>Enter Designation</label>
+                    <label>Short Description </label>
                     <input name="designation" value="<?php echo $roww["designation"]; ?>" type="text" class="form-control" placeholder="Enter ...">
                   </div>
                 </div>
 
                 <div class="card-body pad">
-                  <label>Comments</label>
+                  <label>Description</label>
                   <div class="mb-3">
                     <textarea name="comments" placeholder="comments" style="width: 100%;" rows="5" cols="23"><?php echo $roww["descrip"]; ?></textarea>
                   </div>
