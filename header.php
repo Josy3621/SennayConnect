@@ -75,10 +75,10 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                         <nav class="main-menu navbar-expand-md navbar-light">
 
                             <div class="hover">
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
 
 
-                                    <ul class="navbar-nav ml-auto">
+                                    <ul class="navbar-nav ml-auto" class="navigation">
                                         <li class="nav-item active"><a class="nav-item m-lg-2" class="nav-link" href="index.php">Home</a></li>
 
 
