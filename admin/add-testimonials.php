@@ -125,7 +125,7 @@ $a = 5;
               <h1>Add Work</h1>
             </div>
             <div class="col-sm-6">
-              <a href="view-testimonials.php" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i> View Testimonials</a>
+              <a href="view-testimonials.php" class="btn btn-success"><i class="fa fa-eye" aria-hidden="true"></i> View Work</a>
             </div>
 
           </div>
