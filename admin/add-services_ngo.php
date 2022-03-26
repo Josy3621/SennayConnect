@@ -41,7 +41,7 @@ $a = 11;
     $today = date("D d M Y");
     $edit = $_GET['edit'];
 
-    $resultt = mysqli_query($con, "SELECT * FROM services_ngo_ngo where id=" . $edit . "");
+    $resultt = mysqli_query($con, "SELECT * FROM services_ngo where id=" . $edit . "");
     $roww = mysqli_fetch_array($resultt);
 
     if (isset($_POST['publise'])) {

@@ -1,6 +1,5 @@
 <?php
 include "admin/conn.php";
-include 'admin/auth.php';
 
 //fetch settings
 $settings = mysqli_query($con, "SELECT * FROM settings");
@@ -64,7 +63,13 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                     <!--Nav Box-->
                     <div class="nav-outer">
                         <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar-2.png" alt=""></div>
+                        <div class="mobile-nav-toggler"><ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+    </li>
+    
+
+  </ul></div>
 
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-md navbar-light">
