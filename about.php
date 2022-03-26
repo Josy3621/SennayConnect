@@ -80,7 +80,7 @@ $setting  = mysqli_fetch_array($settings);
                 <div class="content-box">
                     <div class="content-wrapper">
                         <div class="title">
-                            <h1>About Sunnay Connect</h1>
+                            <h1>About <?php echo $setting['site_name']; ?></h1>
                         </div>
                         <!--<ul class="bread-crumb style-two">
                         <li class="active"><a href="about.php">About Company <i class="flaticon-up-arrow"></i></a></li>

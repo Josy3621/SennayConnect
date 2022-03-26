@@ -1,6 +1,6 @@
 <?php
 include "admin/conn.php";
-
+include 'admin/auth.php';
 
 //fetch settings
 $settings = mysqli_query($con, "SELECT * FROM settings");
@@ -64,22 +64,15 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                     <!--Nav Box-->
                     <div class="nav-outer">
                         <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><ul class="navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
-    </li>
-    
-
-  </ul>
-</div>
+                        <div class="mobile-nav-toggler"><img src="assets/images/icons/icon-bar-2.png" alt=""></div>
 
                         <!-- Main Menu -->
                         <nav class="main-menu navbar-expand-md navbar-light">
 
                             <div class="hover">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-<div class="navigation">
+
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active"><a class="nav-item m-lg-2" class="nav-link" href="index.php">Home</a></li>
 
@@ -89,31 +82,38 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
 
                                         <li class="nav-item dropdown"><a class="nav-item m-lg-2" class="nav-link dropdown-toggle" href="service.php" id="navbarDropdown" role="button" data-toggle="dropdown" class="fa-solid fa-caret-down">Services <i class="fas fa-chevron-circle-down"></i></a>
 
-                                            <div class="navidation">
+
                                             <div class="hover-1">
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                
-                                                    <a style="align-content: center;" class="dropdown-item" href="service.php">
+                                                    <a style="align-content: center;" class="dropdown-item" href="service-all.php">
                                                         All Serivice </i> </a>
                                                     <div class="dropdown-divider"></div>
-                                                    <?php
+
+                                                    <a style="align-content: center;" class="dropdown-item" href="service.php">
+                                                       Corporate Services </i> </a>
+                                                    <div class="dropdown-divider"></div>
+
+                                                    <a style="align-content: center;" class="dropdown-item" href="service_ngo.php">
+                                                        NGO Services </i> </a>
+                                                    <div class="dropdown-divider"></div>
+
+                                                    <!-- <?php
 
                                                     while ($side_row = mysqli_fetch_array($services)) {
                                                     ?>
                                                         <a class="dropdown-item" href="single-service.php?id=<?php echo $side_row['id']; ?>">
                                                             <?php echo $side_row['title']; ?> <i class="fas fa-chevron-circle-right"></i> </a>
                                                         <div class="dropdown-divider"></div>
-                                                    <?php  } ?>
-                                                    
+                                                    <?php  } ?> -->
                                                 </div>
                                             </div>
-                                            </div>
+
 
                                         </li>
                                         <!-- <li><a class="nav-item m-lg-2" class="nav-link" href="faq.php">FAQ</a>
 
                                         </li> -->
-                                        <li><a class="nav-item m-lg-2" class="nav-link" href="ourimpact.php">Our Work </a>
+                                        <li><a class="nav-item m-lg-2" class="nav-link" href="ourimpact.php">OUR Work </a>
 
                                         </li>
 
@@ -128,7 +128,6 @@ $services = mysqli_query($con, "SELECT * FROM services ORDER BY id");
                                             </form>
                                         </div>
                                     </ul>
-                                    </div>
 
                                 </div>
                             </div>

@@ -70,10 +70,11 @@ $setting  = mysqli_fetch_array($settings);
                 <div class="content-box">
                     <div class="content-wrapper">
                         <div class="title">
-                            <h1>Professional Services</h1>
+                            <h1>Corporate Services</h1>
                         </div>
                         <ul class="bread-crumb clearfix">
                             <li><a href="index.php">Home</a></li>
+                            <li><a href="service-all.php">All Service</a></li>
                             <li>Services</li>
                         </ul>
                     </div>

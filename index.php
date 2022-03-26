@@ -12,7 +12,11 @@ $testi = mysqli_query($con, "SELECT * FROM testimonials LIMIT 3");
 //fetch blog
 $blog = mysqli_query($con, "SELECT * FROM blog");
 //fetch service
-$main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
+$main_service = mysqli_query($con, "SELECT * FROM services ORDER BY id LIMIT 3");
+
+$ngo_service = mysqli_query($con, "SELECT * FROM services_ngo ORDER BY id ");
+
+
 
 //fetch service for about
 $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
@@ -187,7 +191,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
         <section class="services-section style-two ">
             <div class="auto-container">
                 <div class="sec-title text-center">
-                    <div class="sub-title">Services</div>
+                    <div class="sub-title">Our Corporate Services </div>
 
                 </div>
 
@@ -206,6 +210,8 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
             }
         </style>
 
+
+            <!-- service section -->
         <div class="container pb-5">
             <div class="row ">
                 <?php
@@ -231,6 +237,55 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                 <?php  } ?>
             </div>
         </div>
+        <div class="container pb-5"><a href="service_ngo.php ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More NGO Services</a></div>
+
+
+
+           <!-- ngo service section -->
+
+
+           <section class="services-section style-two ">
+            <div class="auto-container">
+                <div class="sec-title text-center">
+                    <div class="sub-title">Our NGO Services</div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+           <div class="container pb-5">
+            <div class="row ">
+                <?php
+                while ($row = mysqli_fetch_array($ngo_service)) {
+                ?>
+                    <div class="col-md-4 zoom">
+
+                        <div class="card-deck">
+                            <div class="card">
+                                <img class="card-img-top" style="height:270px;" src="admin/images/services_ngo/<?php echo $row['img']; ?>" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title"><b><a href="single-service.php?id=<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a></b></h5>
+                                    <p class="card-text"><?php echo $row['short']; ?></p>
+                                </div>
+                                <div class="card-footer">
+
+                                    <div class="link"><a href="single-service_ngo.php?id=<?php echo $row['id']; ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <?php  } ?>
+
+            </div>
+            
+        </div>
+        <div class="container pb-5"><a href="service_ngo.php ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More NGO Services</a></div>
+
+
+
+
 
 
 
@@ -373,7 +428,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
             <div class="auto-container">
                 <div class="sec-title text-center light">
                     <div class="sub-title text-center">What do we strongly believe</div>
-                    <h2>Sunnay Connect strongly believe</h2>
+                    <h2><?php echo $setting['site_name']; ?> strongly believe</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-2 col-md-4 work-process-block">
