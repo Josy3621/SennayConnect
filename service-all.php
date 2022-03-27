@@ -153,7 +153,7 @@ $setting  = mysqli_fetch_array($settings);
            <section class="services-section style-two ">
             <div class="auto-container">
                 <div class="sec-title text-center">
-                    <div class="sub-title">Our NGO Services</div>
+                    <div class="sub-title">NGO Services</div>
 
                 </div>
 
@@ -172,12 +172,12 @@ $setting  = mysqli_fetch_array($settings);
                             <div class="card">
                                 <img class="card-img-top" style="height:270px;" src="admin/images/services_ngo/<?php echo $row['img']; ?>" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title"><b><a href="single-service.php?id=<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a></b></h5>
+                                    <h5 class="card-title"><b><a href="single-service_ngo.php?id=<?php echo $row['id']; ?>"><?php echo $row['title']; ?></a></b></h5>
                                     <p class="card-text"><?php echo $row['short']; ?></p>
                                 </div>
                                 <div class="card-footer">
 
-                                    <div class="link"><a href="single-service.php?id=<?php echo $row['id']; ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
+                                    <div class="link"><a href="single-service_ngo.php?id=<?php echo $row['id']; ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
                                 </div>
                             </div>
                         </div>

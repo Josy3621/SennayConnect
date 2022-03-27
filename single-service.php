@@ -81,7 +81,7 @@ $setting  = mysqli_fetch_array($settings);
 
                         <ul class="bread-crumb clearfix">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="#">Service</a></li>
+                            <li><a href="service.php">Corporate Service</a></li>
                             <li><?php echo $fetch['title']; ?></li>
                         </ul>
                     </div>
@@ -158,6 +158,7 @@ $setting  = mysqli_fetch_array($settings);
                         </div> -->
 
                     </div>
+                    <div class="container pb-5"><a href="admin/login_detail.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
                     <aside class="col-lg-4 sidebar">
                         <div class="blog-sidebar style-two">
 

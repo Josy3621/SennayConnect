@@ -110,11 +110,14 @@ $setting  = mysqli_fetch_array($settings);
                                 </div>
                             </div>
                         </div>
+
                       
 
                        
 
                     </div>
+                    <div class="container pb-5"><a href="admin/login_detail.php" class="readmore-link"><i class="flaticon-up-arrow"></i>More Details</a></div>
+
                     <aside class="col-lg-4 sidebar">
                         <div class="blog-sidebar style-two">
 

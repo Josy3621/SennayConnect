@@ -191,7 +191,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
         <section class="services-section style-two ">
             <div class="auto-container">
                 <div class="sec-title text-center">
-                    <div class="sub-title">Our Corporate Services </div>
+                    <div class="sub-title">Corporate Services </div>
 
                 </div>
 
@@ -237,7 +237,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                 <?php  } ?>
             </div>
         </div>
-        <div class="container pb-5"><a href="service_ngo.php ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More NGO Services</a></div>
+        <div class="container pb-5"><a href="service.php ?>" class="readmore-link"><i class="flaticon-up-arrow"></i>More Corporate Services</a></div>
 
 
 
@@ -247,7 +247,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
            <section class="services-section style-two ">
             <div class="auto-container">
                 <div class="sec-title text-center">
-                    <div class="sub-title">Our NGO Services</div>
+                    <div class="sub-title"> NGO Services</div>
 
                 </div>
 
@@ -303,7 +303,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                         </div>
                         <div class="row">
 
-                            <?php
+                            <!-- <?php
 
                             while ($side_row = mysqli_fetch_array($about_service)) {
                             ?>
@@ -318,7 +318,7 @@ $about_service = mysqli_query($con, "SELECT * FROM services ORDER BY id ");
                                         </div>
                                     </div>
                                 </div>
-                            <?php  } ?>
+                            <?php  } ?> -->
                             <!-- <div class="col-md-6">
                                 <div class="icon-box wow fadeInUp" data-wow-duration="1500ms">
                                     <div class="icon"><span></span></div>

@@ -74,7 +74,7 @@ $setting  = mysqli_fetch_array($settings);
                         </div>
                         <ul class="bread-crumb clearfix">
                             <li><a href="index.php">Home</a></li>
-                            <li><a href="service-all.php">All Service</a></li>
+                            <li><a href="service-all.php">ALL Service</a></li>
                             <li>NGO Services</li>
                         </ul>
                     </div>
