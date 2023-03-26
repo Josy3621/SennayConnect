@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 10, 2022 at 11:23 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.4.24
+-- Generation Time: Mar 26, 2023 at 02:31 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -63,8 +63,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`ad_id`, `ad_name`, `ad_email`, `ad_password`) VALUES
-(1, 'admin', 'admin@gmail.com', 'admin'),
-(2, 'ygsolution', 'ygsolution@gmail.com', '12345678');
+(1, 'ygsolution', 'ygsolution@gmail.com', 'ygsolution28'),
+(3, 'Sennay Connect', 'sennayconnect@gmail.com', 'sennayconnect2022');
 
 -- --------------------------------------------------------
 
@@ -94,7 +94,7 @@ INSERT INTO `blog` (`id`, `title`, `category`, `descrip`, `img`, `url`, `date`, 
 (10, 'lkefd', 'Transportations', '<p>fdasjkfalk</p>', '567862420client-logo-5-2.jpg', '', 'Fri 11 Mar 2022', '0'),
 (12, 'gfsg', 'Transportations', '<p>sgf</p>', '1163272223author-9.jpg', '', 'Fri 11 Mar 2022', '0'),
 (13, 'gfsg', 'Transportations', '<p>sgf</p>', '1209053130author-9.jpg', '', 'Fri 11 Mar 2022', '0'),
-(14, 'gfsg', 'Transportations', '<p>sgf</p>', '869318859client-logo-1.jpg', '', 'Fri 11 Mar 2022', '0');
+(14, 'gfsg', 'Transportations', '<p>sgfDD</p>', '848599809news-7.jpg', '', 'Thu 24 Mar 2022', '0');
 
 -- --------------------------------------------------------
 
@@ -284,17 +284,34 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `title`, `short`, `descrip`, `img`, `url`, `date`, `status`) VALUES
-(36, 'Project Training', 'These courses focus on the practical knowledge and skills that a project leader must master. The hard skills are skills such as making a plan, writing a project plan, making a budget, dividing tasks, and managing the project.\r\n', '<p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\">These courses focus on the practical knowledge and skills that a project leader must master. The hard skills are skills such as making a plan, writing a project plan, making a budget, dividing tasks, and managing the project.</p><p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\">Project management is essentially the practice of turning ideas into reality. Learning how the pros plan, budget, prioritize, and execute projects will help you do the same in your personal and professional life. A goal without a plan can set you up for hours, weeks, or even months of busy work.<br></p>', '268971645img4.jpg', NULL, 'Thu 10 Mar 2022', '0'),
-(37, 'project Design', 'Project design is an early phase of the project where a project\'s key features, structure, criteria for success, and major deliverables are all planned out. The aim is to develop one or more designs that can be used to achieve the desired project goals.\r\n', '<p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\">Project design is an early phase of the project where a project\'s key features, structure, criteria for success, and major deliverables are all planned out. The aim is to develop one or more designs that can be used to achieve the desired project goals.</p><p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\">The project design includes everything from who is responsible for completing the project to a description of the project, its goals, outcomes and objectives. It describes when these goals, outcomes and objectives will be reached, and the major deliverables, products or features that will be completed<br></p>', '137084300img4.jpg', NULL, 'Thu 10 Mar 2022', '0'),
-(38, 'Matchmaking', 'short description', '<p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\">full description<br></p>', '384740905img4.jpg', NULL, 'Thu 10 Mar 2022', '0'),
-(43, 'sxxs', 'dewd', '<p>de</p>', '503674016client-logo-5-2.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(45, 'kkk', 'knkjnkj', '<p>k</p>', '991985269certificate-1.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(46, 'casc', 'cdasc', '<p>cdasc</p>', '2028811126client-logo-4-2.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(47, 'efjpqo', 'fwejopd', '<p>dfijopa</p>', '127106733certificate-2.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(49, 'fdlkasjf', 'lkjdasf', '<p>klafds</p>', '273043702client-logo-1.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(50, 'fdlkasjf', 'lkjdasf', '<p>klafds</p>', '994117553client-logo-1.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(51, 'fdlkasjf', 'lkjdasf', '<p>klafds</p>', '1118802145client-logo-1.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(52, 'fdlkasjf', 'lkjdasf', '<p>klafds</p>', '462821997flag-5.jpg', NULL, 'Fri 11 Mar 2022', '0');
+(36, 'Community Initiative Profiling', 'We undertakes due diligence on community groups (beneficiary) and connect companies’ community development programs', '<p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\"><span style=\"color: rgb(42, 42, 42); font-family: Yantramanav, sans-serif;\">We undertakes due diligence on community groups (beneficiary) and connect companies’ community development programs in the best way possible that their social investments count. We are building an online platform in which you can access a profile of more than a xxxx local community development initiatives in the country.</span><br></p>', '1663221666img4.jpg', NULL, 'Tue 22 Mar 2022', '0'),
+(37, 'Cause Marketing', 'What if we contribute in redesigning community development initiatives in such a way they fit your marketing strategy?', '<p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\"><span style=\"color: rgb(42, 42, 42); font-family: Yantramanav, sans-serif;\">What if we contribute in redesigning community development initiatives in such a way they fit your marketing strategy? Or find a good intersection between what campaniles strategize and how that can fit with already operating community initiatives?</span><br></p>', '2038268846img4.jpg', NULL, 'Thu 24 Mar 2022', '0'),
+(38, 'Running the show', 'What if we run your ‘giving back to’ community campaigns with development partners and ensure it is truly impactful?', '<p open=\"\" sans\",=\"\" arial,=\"\" sans-serif;=\"\" font-size:=\"\" 14px;\"=\"\" style=\"margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; border: none; outline: none; line-height: inherit;\"><span style=\"color: rgb(42, 42, 42); font-family: Yantramanav, sans-serif;\">What if we run your ‘giving back to’ community campaigns with development partners and ensure it is truly impactful?</span><br></p>', '419927525img4.jpg', NULL, 'Thu 24 Mar 2022', '0'),
+(55, 'Representation', 'We may serve as your companys CSR wing that leads and manages your giving back to community initiatives and ensure their impact.', '<p><span style=\"color: rgb(42, 42, 42); font-family: Yantramanav, sans-serif;\">We may serve as your companys CSR wing that leads and manages your giving back to community initiatives and ensure their impact.</span><br></p>', '1297171866img4.jpg', NULL, 'Thu 24 Mar 2022', '0');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `services_ngo`
+--
+
+CREATE TABLE `services_ngo` (
+  `id` int(100) NOT NULL,
+  `title` varchar(1000) DEFAULT NULL,
+  `short` varchar(1500) DEFAULT NULL,
+  `descrip` varchar(10000) DEFAULT NULL,
+  `img` varchar(100) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `date` varchar(100) DEFAULT NULL,
+  `status` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `services_ngo`
+--
+
+INSERT INTO `services_ngo` (`id`, `title`, `short`, `descrip`, `img`, `url`, `date`, `status`) VALUES
+(0, 'adf', 'daf', '<p>dafa</p>', '79462558774626c9da5.jpg', NULL, 'Sun 26 Mar 2023', '0');
 
 -- --------------------------------------------------------
 
@@ -381,11 +398,11 @@ CREATE TABLE `testimonials` (
 --
 
 INSERT INTO `testimonials` (`id`, `title`, `designation`, `descrip`, `img`, `url`, `date`, `status`) VALUES
-(28, 'Example 2', 'what they do', 'what they said', '419716502author-10.jpg', NULL, 'Wed 09 Mar 2022', '0'),
+(28, 'campany a', 'what they do', 'what they said\r\ndafjl;aksfd\r\nfdajl;kdfjad\r\nfdajlkf\r\nklfdjas;\'f\r\nfjaldkjdf', '810978159icon-18.png', NULL, 'Thu 24 Mar 2022', '0'),
 (29, 'Example 2', 'VP, Green Valley Intenational', 'what the said', '443944935author-10.jpg', NULL, 'Wed 09 Mar 2022', '0'),
-(30, 'compony name', 'compony job', 'Example 1', '1014802591author-10.jpg', NULL, 'Wed 09 Mar 2022', '0'),
-(31, 'dflk', 'fda', 'fad', '1344610279author-11.jpg', NULL, 'Fri 11 Mar 2022', '0'),
-(32, 'dfgs', 'fad', 'fad', '1710265995client-logo-5.jpg', NULL, 'Fri 11 Mar 2022', '0');
+(30, 'compony 3', 'compony job', 'Example 1', '897288002icon-12.png', NULL, 'Thu 24 Mar 2022', '0'),
+(31, 'COMPANY B', '', 'THE SECOND', '169195388icon-5.png', NULL, 'Thu 24 Mar 2022', '0'),
+(32, 'company a', 'designation', 'fadfdajfkadjf aflkdajfklajdf;ljvnja f;lkadfj;ajflkdaj f;lkdajfdkafjdalkfmfmnkfdafj', '68495539news-30.jpg', NULL, 'Thu 24 Mar 2022', '0');
 
 --
 -- Indexes for dumped tables
@@ -489,7 +506,7 @@ ALTER TABLE `about`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `ad_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ad_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `blog`
@@ -543,7 +560,7 @@ ALTER TABLE `package`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT for table `settings`
