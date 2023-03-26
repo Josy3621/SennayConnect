@@ -83,7 +83,7 @@ $setting  = mysqli_fetch_array($settings);
                 <div class="sec-title text-center">
                     <div class="sub-title">Drop a line</div>
                     <h2>We’re Always Here for You</h2>
-                    <div class="text">Please do not hesitate to contact us if you require further information about our logisitc service.</div>
+                    <div class="text">Please do not hesitate to contact us if you require further information about our service.</div>
                 </div>
                 <!--Contact Form-->
                 <div class="contact-form">
