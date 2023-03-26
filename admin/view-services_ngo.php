@@ -80,7 +80,7 @@ $a = 12;
               <?php
               }
               ?>
-              <h1>All services_ngos</h1>
+              <h1>All NGO Services</h1>
             </div>
             <div class="col-sm-6" style="text-align:right;">
               <a class="btn btn-primary" href="add-services_ngo.php">
