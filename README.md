@@ -1,5 +1,5 @@
 # SennayConnect
-This is a Sample of what I was working for Sennay Connect companie 
+This is a Sample of what I was working for Sennay Connect company
 # Featurs
 ## Admin
 #### -Dashboard
